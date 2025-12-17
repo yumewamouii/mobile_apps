@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <!--Контейнер под фрагменты -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_fragm">
+
+    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Краткая погода"
+        android:id="@+id/currentTask"
+        android:layout_below="@id/container_fragm"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Подробная погода"
+        android:id="@+id/finishTask"
+        android:layout_below="@id/container_fragm"
+        android:layout_toEndOf="@id/currentTask"
+        android:layout_alignParentBottom="true"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
